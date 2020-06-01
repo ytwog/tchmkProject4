@@ -20,11 +20,7 @@ def Func_isSquareFree(n):
 for i in range(M):
     a = randint(1, N)
     print(a)
-    if Func_isSquareFree(a):
-        S += 1
-    else:
-        S += 0
+    S += Func_isSquareFree(a)
 
-print()
 print("Answer: " + str(S / M))
 print("Teorethical:  " + str(6 / pi ** 2))
